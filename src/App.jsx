@@ -10,7 +10,7 @@ import Technologies from "./components/Technologies-section/Technologies"
 import StackPanel from "./components/StackPanel"
 
 const fetchTechnologies = async () => {
-  const response = await fetch("/technologies.json")
+  const response = await fetch(`${import.meta.env.BASE_URL}technologies.json`)
   const data = await response.json()
   return data
 }

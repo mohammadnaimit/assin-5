@@ -2,6 +2,7 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 border-b border-gray-100 bg-white py-3 shadow-sm sm:py-4">
       <div className="mx-auto flex w-11/12 max-w-7xl items-center justify-between">
+        {/* মোবাইল মেনু আইকন - শুধুমাত্র মোবাইল স্ক্রিনের জন্য */}
         <div className="md:hidden flex items-center">
           <img
             src={`${import.meta.env.BASE_URL}hamburger.png`}
@@ -10,7 +11,8 @@ const Navbar = () => {
           />
         </div>
 
-        <div className="flex items-center justify-center">
+        {/* লোগো সেকশন */}
+        <div className="flex items-center justify-center md:justify-start">
           <img
             src={`${import.meta.env.BASE_URL}images/logo-text.png`}
             alt="DevStack Logo"
@@ -18,6 +20,7 @@ const Navbar = () => {
           />
         </div>
 
+        {/* মাঝখানের নেভিগেশন লিংক - মোবাইল স্ক্রিনে হাইড করা থাকবে */}
         <div className="hidden md:flex items-center space-x-8 text-sm font-medium">
           <a href="#" className="text-pink-600">
             Home
@@ -36,6 +39,7 @@ const Navbar = () => {
           </a>
         </div>
 
+        {/* ডানপাশের বাটন সেকশন */}
         <div className="flex items-center space-x-2 text-xs font-medium sm:space-x-3 md:space-x-5 md:text-sm">
           <button className="hidden text-gray-700 hover:text-pink-600 sm:block">
             Sign In

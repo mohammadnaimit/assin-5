@@ -38,7 +38,7 @@ const Hero = () => {
        
         <div className="flex justify-center md:justify-end">
           <img
-            src="/images/banner-stack.png"
+            src={`${import.meta.env.BASE_URL}images/banner-stack.png`}
             alt="Development Stack Banner"
             className="w-full max-w-xs object-contain sm:max-w-md lg:max-w-lg"
           />

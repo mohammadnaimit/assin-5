@@ -7,7 +7,7 @@ const Navbar = () => {
       
         <div className="md:hidden flex items-center">
           <img 
-            src="/hamburger.png" 
+           src={`${import.meta.env.BASE_URL}hamburger.png`}
             alt="Menu Icon" 
             className="w-6 h-6 object-contain"
           />
@@ -16,7 +16,7 @@ const Navbar = () => {
    
         <div className="flex items-center justify-center">
           <img 
-            src="/images/logo-text.png" 
+            src={`${import.meta.env.BASE_URL}images/logo-text.png`}
             alt="DevStack Logo" 
             className="h-7 w-auto object-contain sm:h-8 md:h-9" 
           />

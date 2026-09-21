@@ -12,9 +12,9 @@ const Navbar = () => {
 
         <div className="flex items-center justify-center">
           <img
-            src={`${import.meta.env.BASE_URL}images/banner-stack.png`}
-            alt="Development Stack Banner"
-            className="w-full max-w-xs object-contain sm:max-w-md lg:max-w-lg"
+            src={`${import.meta.env.BASE_URL}images/logo-text.png`}
+            alt="DevStack Logo"
+            className="h-7 w-auto object-contain sm:h-8 md:h-9"
           />
         </div>
 

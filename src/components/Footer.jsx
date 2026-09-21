@@ -3,15 +3,13 @@ const Footer = () => {
     <footer className="bg-white border-t border-gray-100 pt-10 md:pt-16 pb-8 md:pb-10">
       <div className="w-11/12 max-w-7xl mx-auto">
         
-      
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 pb-8 md:pb-12 text-center md:text-left">
           
-         
           <div className="md:col-span-2 space-y-4 flex flex-col items-center md:items-start">
             {/* Logo */}
             <div className="flex items-center justify-center md:justify-start">
               <img 
-                src="/images/logo-text.png" 
+                src={`${import.meta.env.BASE_URL}images/logo-text.png`} 
                 alt="DevStack Logo" 
                 className="h-8 w-auto object-contain" 
               />
@@ -21,7 +19,6 @@ const Footer = () => {
               Curated tools, technologies, and resources for developers building modern software.
             </p>
 
-           
             <div className="flex items-center justify-center md:justify-start space-x-2 md:space-x-4 pt-1 text-sm font-medium text-gray-600">
               <a href="#" className="hover:text-pink-600 transition-colors">GitHub</a>
               <span className="text-gray-400">·</span>
@@ -42,7 +39,6 @@ const Footer = () => {
             </ul>
           </div>
 
-       
           <div className="hidden md:block space-y-3">
             <h3 className="text-xs font-bold text-gray-900 tracking-wider uppercase">
               COMPANY
@@ -54,7 +50,6 @@ const Footer = () => {
             </ul>
           </div>
 
-         
           <div className="hidden md:block space-y-3">
             <h3 className="text-xs font-bold text-gray-900 tracking-wider uppercase">
               LEGAL
@@ -67,7 +62,6 @@ const Footer = () => {
 
         </div>
 
-     
         <div className="flex flex-col items-center justify-between gap-3 border-t border-gray-100 pt-6 text-center text-xs text-gray-400 sm:flex-row sm:text-left md:pt-8">
           <p>© 2026 Dev Stack. All rights reserved.</p>
           <div className="flex items-center space-x-3 md:space-x-6">
